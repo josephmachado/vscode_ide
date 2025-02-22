@@ -4,15 +4,8 @@ import duckdb
 def main():
     print("Hello from vscode-ide!")
 
+
 def get_fake_data(input_param: int):
-    """some defintion to test docs preview
-
-    Args:
-        input_param: 
-
-    Returns:
-        
-    """
     fake_data = duckdb.sql(query="select 1").fetchall()
     for f_data in fake_data:
         print(f_data, type(f_data), f_data[0], len(f_data))
